@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Showcase CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#">
+        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+        <span>Showcase CSS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#features">Componentes</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#cta">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Sección principal">
+        <div
+          class="hero__bg"
+          role="img"
+          aria-label="Fondo visual del hero"></div>
+
+        <div class="hero__content">
+          <p class="pill">
+            <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+            CSS moderno • Animaciones • Responsive
+          </p>
+
+          <h1>Showcase visual de <span class="accent">CSS moderno</span></h1>
+          <p class="subtitle">
+            Una mini landing diseñada para enseñar pseudoclases, transiciones,
+            keyframes, efectos con imágenes y una UI cuidada lista para
+            portfolio.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="#features">
+              <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+              Ver componentes
+            </a>
+
+            <a class="btn btn--ghost" href="#gallery">
+              <i class="fa-regular fa-image" aria-hidden="true"></i>
+              Ver galería
+            </a>
+          </div>
+
+          <div class="hero__stats" aria-label="Datos rápidos">
+            <div class="stat">
+              <span class="stat__num">4+</span>
+              <span class="stat__label">Pseudoclases</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">1</span>
+              <span class="stat__label">@keyframes</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">100%</span>
+              <span class="stat__label">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blob" aria-hidden="true"></div>
+      </section>
+
+      <section id="features" class="section">
+        <header class="section__header">
+          <h2>Componentes con micro-interacciones</h2>
+          <p>Tarjetas, botones y estados con pseudoclases visibles.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card">
+            <i class="fa-solid fa-bolt card__icon" aria-hidden="true"></i>
+            <h3>Transiciones suaves</h3>
+            <p>Hover, focus y active con feedback real y elegante.</p>
+            <a class="card__link" href="#cta">Aprender más</a>
+          </article>
+
+          <article class="card">
+            <i
+              class="fa-solid fa-compass-drafting card__icon"
+              aria-hidden="true"></i>
+            <h3>Diseño limpio</h3>
+            <p>
+              Tipografías externas, espaciados consistentes y buen contraste.
+            </p>
+            <a class="card__link" href="#cta">Ver detalles</a>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-images card__icon" aria-hidden="true"></i>
+            <h3>Efectos con imágenes</h3>
+            <p>Background image, mix-blend-mode y filtros opcionales.</p>
+            <a class="card__link" href="#gallery">Ir a galería</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <header class="section__header">
+          <h2>Galería visual</h2>
+          <p>Ejemplos con imágenes, filtros y composición.</p>
+        </header>
+
+        <div class="masonry" aria-label="Galería de imágenes">
+          <figure class="shot">
+            <img src="./img/shot1.png" alt="Composición visual 1" />
+            <figcaption>
+              <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+              Blend + overlay
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="./img/shot2.png" alt="Composición visual 2" />
+            <figcaption>
+              <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+              Filter + glass
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="./img/shot3.jpg" alt="Composición visual 3" />
+            <figcaption>
+              <i class="fa-solid fa-shapes" aria-hidden="true"></i>
+              Clip-path
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="cta" class="section section--cta">
+        <header class="section__header">
+          <h2>Contacto</h2>
+          <p>Perfecto para demostrar estados de interacción accesibles.</p>
+        </header>
+
+        <form class="form" action="#" method="post">
+          <label>
+            Nombre
+            <input type="text" name="name" placeholder="Tu nombre" required />
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="tu@email.com"
+              required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea
+              name="msg"
+              rows="4"
+              placeholder="¿Qué te pareció el diseño?"
+              required></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Javier Garcia Manotas — <span class="muted">2º DAW</span></p>
+    </footer>
+  </body>
+</html>
